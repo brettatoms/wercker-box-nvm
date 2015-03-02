@@ -1,5 +1,5 @@
 name : nvm
-version : 0.2.0
+version : 0.3.0
 description: Installs nvm to handle multiple NodeJS versions
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type : main
@@ -26,6 +26,7 @@ script: |
   nvm install 0.9
   nvm install 0.10
   nvm install 0.11
+  nvm install 0.12
 
   # Install latest version of io.js
   nvm install iojs
