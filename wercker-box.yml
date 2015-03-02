@@ -12,7 +12,7 @@ packages:
   - nvm
 script: |
   # Install apt-get dependencies
-  sudo apt-get install curl git
+  # sudo apt-get install curl git
 
   # Install nvm through curl
   curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
