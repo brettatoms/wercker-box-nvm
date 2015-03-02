@@ -14,8 +14,10 @@ script: |
   # Install apt-get dependencies
   # sudo apt-get install curl git
 
+  # Install nvm with git so that we don't have to update the version number
+  git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
   # Install nvm through curl
-  curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+  #curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
 
   # Source the nvm script so it's available on the commandline
   source $HOME/.nvm/nvm.sh
